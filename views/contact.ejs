@@ -1,6 +1,131 @@
-<%- include partials/header.ejs %>
-<%- include partials/nav.ejs %>
-
-  <h1><%= title %></h1>
-  <p>Welcome to <%= title %></p>
-<%- include partials/footer.ejs %>
+<form class="row g-3 needs-validation forms full" id="contact" action="https://formsubmit.co/8d497be83514e09bcd45f0891e85fd33" method="POST" validate>
+  <div class="container text-center opacity-50">
+    <h2 class="text-shadow-lg" id="form_title">Book a Lesson: ride the ocean!</h2>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" name="First name" class="form-control" id="validationCustom01" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" name="Last name" class="form-control" id="validationCustom02" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">email</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="email" name="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Please choose a email.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" name="city" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">State</label>
+    <select name="State" class="form-select form-control" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>ON</option>
+      <option>QC</option>
+      <option>NS</option>
+      <option>NB</option>
+      <option>MB</option>
+      <option>BC</option>
+      <option>PE</option>
+      <option>SK</option>
+      <option>AB</option>
+      <option>NL</option>
+      <option>NT</option>
+      <option>YT</option>
+      <option>NU</option>
+      <option>Other</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" name="Zip" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom05" class="form-label">Lesson Type</label>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="Project Type" id="flexRadioDefault1" required>
+      <label class="form-check-label" for="Project Type">
+        Private
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="Project Type" id="flexRadioDefault2" required>
+      <label class="form-check-label" for="Project Type">
+        Semi Private
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="Project Type" id="flexRadioDefault2" required>
+      <label class="form-check-label" for="Project Type">
+        Group
+      </label>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom05" class="form-label">Do you need gear?</label>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="Project Type" id="flexRadioDefault1" required>
+      <label class="form-check-label" for="Project Type">
+        Yes
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="Project Type" id="flexRadioDefault2" required>
+      <label class="form-check-label" for="Project Type">
+        No
+      </label>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="input-group">
+      <span class="input-group-text">Notes <br> (location)</span>
+      <textarea class="form-control" name="Description" aria-label="With textarea"></textarea>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="container text-center">
+      <button class="btn btn-warning" type="submit">Submit Request</button>
+    </div>
+  </div>
+</form>
+<footer>
+  <nav class="navbar fixed-bottom bgcolor">
+      <div class="container-fluid">
+          <h6 class="display-12 navbar-text"> &copy; copyright 2023. All rights reserved.</h6>
+      </div>
+  </nav>
+</footer>
